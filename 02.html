@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+	#container{
+		position: relative;
+	}
+	#container canvas, #BoundingBox {
+		position: absolute;
+	}
+</style>
+<script>var mouse = 0;</script>
+<script type="text/javascript" src="cc.js"></script>
+<script type="text/javascript" src="rn.js"></script>
+<script>
+window.onload=function() {
+	var mouse = 0;
+	rn();
+}
+</script>
+</head>
+
+<div id="container">
+	<canvas width=1000 height=1000 id="ccc"></canvas>
+	<div id="BoundingBox" style="height: 120px; width: 140px; top: 0; left: 0;" onmouseover="FillRed(event)" onmouseout="FillGray(event)"></div>
+	<div id="BoundingBox" style="height: 120px; width: 140px; top: 200; left: 0;" onmouseover="FillRed(event)" onmouseout="FillGray(event)"></div>
+	<div id="BoundingBox" style="height: 160px; width: 120px; top: 400; left: 0;" onmouseover="FillRed(event)" onmouseout="FillGray(event)"></div>
+	<div id="BoundingBox" style="height: 120px; width: 120px; top: 0; left: 200;" onmouseover="FillRed(event)" onmouseout="FillGray(event)"></div>
+	<div id="BoundingBox" style="height: 120px; width: 140px; top: 200; left: 190;" onmouseover="FillRed(event)" onmouseout="FillGray(event)"></div>
+	<div id="BoundingBox" style="height: 160px; width: 120px; top: 400; left: 200;" onmouseover="FillRed(event)" onmouseout="FillGray(event)"></div>
+</div>
+</html>
